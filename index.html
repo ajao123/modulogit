@@ -1,1 +1,98 @@
 atualizando o teste 3
+
+https://youtu.be/OuOb1_qADBQ?t=7276
+
+Inserindo valores
+
+	git config --global user.name "Allisson Jardel"
+	git config --global user.email "allissonjardel@gmail.com"
+	git config --global core.editor sub
+
+Visualizando valores
+	
+	git config user.name
+	git config user.email
+	git config core.editor
+
+Visualizar todos
+
+	git config --list
+
+Avançar nas pastas
+
+	cd "nome_da_pasta"
+
+Retroceder nas pastas
+
+	cd ..
+
+Iniciar Repositório
+
+	git init
+
+Status do respositório
+
+	git status
+
+Adicionando commits:
+
+	git add "arquivo.txt"
+
+	git add .
+
+	git add -A
+
+	git commit -m "Primeiro Commit"
+
+	git commit -am "Primeiro commit teste 2"
+
+Lista de commits na Branch:
+
+	git log
+
+Mostrar todas as Branchs:
+	
+	git branch
+
+Adicionando Branchs:
+
+	git branch teste
+
+Ir para uma Branch:
+
+	git checkout teste
+
+Resetando Commits:
+
+	Retorna para o commit selecionando deixando os outros commits em aberto:
+		git reset --soft dc283803db4c8f009c7a5dd886a87d504bdcdeae
+
+	Retorna para o commit selecionando deixando as alterações pendentes(sem add -A):
+		git reset --mixed dc283803db4c8f009c7a5dd886a87d504bdcdeae
+
+	Retorna todos os arquivos para o commit selecionado:
+		git reset --hard dc283803db4c8f009c7a5dd886a87d504bdcdeae
+
+Verificando alterações:
+	
+	git diff
+
+	git diff --name-only
+
+	git diff index.html
+
+Desfazer as alterações não commitadas
+
+	git checkout HEAD -- index.html
+
+Adicionando conexão remota:
+
+	git remote add origin https://github.com/ajao123/modulogit.git
+
+Inserindo dados:
+
+	git push -u origin master 
+
+	git push -u origin teste2
+
+	git push
